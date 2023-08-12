@@ -47,39 +47,37 @@ git clone https://github.com/himanshudce/OWAM.git
     6. ```results.ipynb``` for generating the results and plots (requirements_1.txt)
 
 **NOTE** - 
-1. All the experiments are already performed and the results are stored in the ```results``` folder. The results can be reproduced by directly running the ```results.ipynb```. 
+1. All the experiments are already performed and the results are stored in the ```results``` folder except results generated from ```LSTM_OWAM_real_time.ipynb``` due to the large size of the results. Run this file and then the results can be reproduced by directly running the ```results.ipynb```. 
 2. The hague dataset can not be shared as it is not public. please mail on **h.choudhary@student.tue.nl** to get the information regarding the dataset access. For the other datasets please use the following link and paste them in a new ```data``` folder in the repo. 
 
     link - https://drive.google.com/drive/folders/1c-CKmFwtsjb8byuxarG-LksK0Clb4YfY?usp=sharing
 
 
 
-# GNN Networks  
 
-Use the following link to generate training data for GNNs for the hague GNN_raw_data  - https://github.com/liyaguang/DCRNN
+# DGCRN (GNN) Model 
 
-- Generate train, test and val data
-- Generate distance based adjcency matrix
+Use the following link for the updated code of the DGCRN model - https://github.com/himanshudce/Traffic-Benchmark
+
+The data can be downloaded from the below link, paste the data in the ```data``` folder in the repo. Hague data can not be downloaded as it is not public. Please mail on **h.choudhary@student.tue.nl** to get the information regarding the dataset. 
+
+link - https://drive.google.com/drive/folders/1EXMh_tla2cEPo2UM1vZEKR4Nt-wbifyv?usp=sharing
+
+use the following command to run the code - 
+
+1. for the Hague dataset:
+```
+python train_benchmark.py --model 'DGCRN' --data 'Hague' >> log.txt
+```
+2. for the METR-LA dataset:
+```
+python train_benchmark.py --model 'DGCRN' --data 'METR-LA' >> log.txt
+```
+3. for the PEMS-BAY dataset:
+```
+python train_benchmark.py --model 'DGCRN' --data 'PEMS-BAY' >> log.txt
+```
+
+**NOTE** - Running the model may require high computational power. Please use the ```--gpu``` flag to run the model on GPU.
 
 
-To run different GNN models follow - https://github.com/tsinghua-fib-lab/Traffic-Benchmark 
-
-The below results are for 1 epoch with 70/20/10 split between train, test and validation datasets
-
-
-
-===== \
-**Results for 3 runs**
-
-valid	MAE	RMSE	MAPE \
-mean:	10.2460	13.5316	0.8379 \
-std:	14.4900	19.1365	1.1849
-
-
-
-test|horizon	MAE-mean	RMSE-mean	MAPE-mean	MAE-std	RMSE-std	MAPE-std 
-
-3	10.1361	12.3946	1.0670	14.3346	17.5286	1.5089 \
-6	9.4435	12.1124	0.9348	13.3551	17.1295	1.3221 \
-9	9.1918	12.1480	0.8508	12.9992	17.1799	1.2032 \
-12	9.2029	12.1316	0.8568	13.0149	17.1567	1.2117 
