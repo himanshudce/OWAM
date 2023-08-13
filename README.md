@@ -55,7 +55,7 @@ git clone https://github.com/himanshudce/OWAM.git
 
 
 
-# DGCRN (GNN) Model 
+## DGCRN (GNN) Model 
 
 Use the following link for the updated code of the DGCRN model - https://github.com/himanshudce/Traffic-Benchmark
 
