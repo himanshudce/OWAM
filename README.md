@@ -1,5 +1,5 @@
 # OWAM Framework
-**Outlier Weighted Autoencoder Modeling Framework** : This thesis emphasizes the rising importance of traffic modeling for transportation systems optimization. Despite extensive research, previous studies have overlooked outlier impact and real-time analysis. The focus here is on improving vehicle traffic flow prediction, especially in outlier scenarios, both offline and real-time. A new approach, Outlier Weighted Autoencoder Modeling (OWAM), is introduced. Autoencoders identify anomalies for effective abnormal traffic pattern handling. Weighted correlation analysis evaluates the influence of nearby sensors on the target sensor’s flow, enhancing LSTM-based traffic models. OWAM also serves as an outlier-based real-time update strategy, adapting to changing traffic patterns. Testing against various datasets highlights OWAM's accuracy-efficiency balance. Although it doesn't outperform Graph techniques in RMSE, OWAM excels in dynamic outlier-based updating, enriching adaptive traffic prediction models for transportation management.
+**Outlier Weighted Autoencoder Modeling Framework** : This paper emphasizes the rising importance of traffic modeling for transportation systems optimization. Despite extensive research, previous studies have overlooked outlier impact and real-time analysis. The focus here is on improving vehicle traffic flow prediction, especially in outlier scenarios, both offline and real-time. A new approach, Outlier Weighted Autoencoder Modeling (OWAM), is introduced. Autoencoders identify anomalies for effective abnormal traffic pattern handling. Weighted correlation analysis evaluates the influence of nearby sensors on the target sensor’s flow, enhancing LSTM-based traffic models. OWAM also serves as an outlier-based real-time update strategy, adapting to changing traffic patterns. Testing against various datasets highlights OWAM's accuracy-efficiency balance. Although it doesn't outperform Graph techniques in RMSE, OWAM excels in dynamic outlier-based updating, enriching adaptive traffic prediction models for transportation management.
 
 
 **OWAM:**
@@ -19,9 +19,9 @@
 ## In order to run the code, please follow the below steps:
 
 1. Clone the repository
-```
+<!---```
 git clone https://github.com/himanshudce/OWAM.git
-```
+```-->
 
 2. Install the requirements (This code contains two seperate enviorments due to compatibility issues with pytorch)
 
@@ -48,20 +48,20 @@ git clone https://github.com/himanshudce/OWAM.git
 
 **NOTE** - 
 1. All the experiments are already performed and the results are stored in the ```results``` folder except results generated from ```LSTM_OWAM_real_time.ipynb``` due to the large size of the results. Run this file and then the results can be reproduced by directly running the ```results.ipynb```. 
-2. The hague dataset can not be shared as it is not public. please mail on **h.choudhary@student.tue.nl** to get the information regarding the dataset access. For the other datasets please use the following link and paste them in a new ```data``` folder in the repo. 
+2. The hague dataset can not be shared as it is not public. please mail on **xxx** to get the information regarding the dataset access. For the other datasets please use the following link and paste them in a new ```data``` folder in the repo. 
 
-    link - https://drive.google.com/drive/folders/1c-CKmFwtsjb8byuxarG-LksK0Clb4YfY?usp=sharing
+    <!---link - https://drive.google.com/drive/folders/1c-CKmFwtsjb8byuxarG-LksK0Clb4YfY?usp=sharing--->
 
 
 
 
 ## DGCRN (GNN) Model 
 
-Use the following link for the updated code of the DGCRN model - https://github.com/himanshudce/Traffic-Benchmark
+<!--- Use the following link for the updated code of the DGCRN model - https://github.com/himanshudce/Traffic-Benchmark --->
 
-The data can be downloaded from the below link, paste the data in the ```data``` folder in the repo. Hague data can not be downloaded as it is not public. Please mail on **h.choudhary@student.tue.nl** to get the information regarding the dataset. 
+The data can be downloaded from the below link, paste the data in the ```data``` folder in the repo. Hague data can not be downloaded as it is not public. Please mail on **xxx** to get the information regarding the dataset. 
 
-link - https://drive.google.com/drive/folders/1EXMh_tla2cEPo2UM1vZEKR4Nt-wbifyv?usp=sharing
+<!---link - https://drive.google.com/drive/folders/1EXMh_tla2cEPo2UM1vZEKR4Nt-wbifyv?usp=sharing-->
 
 use the following command to run the code - 
 
