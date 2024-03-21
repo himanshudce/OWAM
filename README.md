@@ -19,9 +19,6 @@
 ## In order to run the code, please follow the below steps:
 
 1. Clone the repository
-<!---```
-git clone https://github.com/himanshudce/OWAM.git
-```-->
 
 2. Install the requirements (This code contains two seperate enviorments due to compatibility issues with pytorch)
 
